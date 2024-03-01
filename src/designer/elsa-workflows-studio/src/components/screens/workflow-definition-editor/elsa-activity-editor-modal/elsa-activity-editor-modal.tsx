@@ -123,15 +123,17 @@ export class ElsaActivityEditorModal {
       tabs.push(categoryTab);
     }
 
-    tabs.push({
-      tabName: t('Tabs.Common.Name'),
-      renderContent: () => this.renderCommonTab(activityModel)
-    });
+    if (!this.isActivityHumanTask(activityModel.type)) {
+      tabs.push({
+        tabName: t('Tabs.Common.Name'),
+        renderContent: () => this.renderCommonTab(activityModel)
+      });
 
-    tabs.push({
-      tabName: t('Tabs.Storage.Name'),
-      renderContent: () => this.renderStorageTab(activityModel, activityDescriptor)
-    });
+      tabs.push({
+        tabName: t('Tabs.Storage.Name'),
+        renderContent: () => this.renderStorageTab(activityModel, activityDescriptor)
+      });
+    }
 
     this.renderProps = {
       activityDescriptor,
@@ -291,21 +293,21 @@ export class ElsaActivityEditorModal {
 
   renderStorageTab(activityModel: ActivityModel, activityDescriptor: ActivityDescriptor) {
     const formContext = this.formContext;
-    const t = this.t;
+    // const t = this.t;
     let storageDescriptorOptions: Array<SelectOption> = this.workflowStorageDescriptors.map(x => ({
       value: x.name,
       text: x.displayName
     }));
-    let outputProperties = activityDescriptor.outputProperties.filter(x => !x.disableWorkflowProviderSelection);
-    let inputProperties = activityDescriptor.inputProperties.filter(x => !x.disableWorkflowProviderSelection);
+    // let outputProperties = activityDescriptor.outputProperties.filter(x => !x.disableWorkflowProviderSelection);
+    // let inputProperties = activityDescriptor.inputProperties.filter(x => !x.disableWorkflowProviderSelection);
 
     storageDescriptorOptions = [{value: null, text: 'Default'}, ...storageDescriptorOptions];
 
-    const renderPropertyStorageSelectField = function (propertyDescriptor: ActivityPropertyDescriptor) {
-      const propertyName = propertyDescriptor.name;
-      const fieldName = `propertyStorageProviders.${propertyName}`;
-      return selectField(formContext, fieldName, propertyName, activityModel.propertyStorageProviders[propertyName], storageDescriptorOptions, null, fieldName);
-    }
+    // const renderPropertyStorageSelectField = function (propertyDescriptor: ActivityPropertyDescriptor) {
+    //   const propertyName = propertyDescriptor.name;
+    //   const fieldName = `propertyStorageProviders.${propertyName}`;
+    //   return selectField(formContext, fieldName, propertyName, activityModel.propertyStorageProviders[propertyName], storageDescriptorOptions, null, fieldName);
+    // }
 
     return (
       <div class="elsa-space-y-8 elsa-w-full">
@@ -313,7 +315,7 @@ export class ElsaActivityEditorModal {
         {checkBox(formContext, 'loadWorkflowContext', 'Load Workflow Context', activityModel.loadWorkflowContext, 'When enabled, this will load the workflow context into memory before executing this activity.', 'loadWorkflowContext')}
         {checkBox(formContext, 'saveWorkflowContext', 'Save Workflow Context', activityModel.saveWorkflowContext, 'When enabled, this will save the workflow context back into storage after executing this activity.', 'saveWorkflowContext')}
 
-        {section('Workflow Instance')}
+        {/* section('Workflow Instance')}
         {checkBox(formContext, 'persistWorkflow', 'Save Workflow Instance', activityModel.persistWorkflow, 'When enabled, this will save the workflow instance back into storage right after executing this activity.', 'persistWorkflow')}
 
         {Object.keys(outputProperties).length > 0 ? (
@@ -322,7 +324,7 @@ export class ElsaActivityEditorModal {
 
         {Object.keys(inputProperties).length > 0 ? (
           [section('Activity Input', 'Configure the desired storage for each input property of this activity.'), inputProperties.map(renderPropertyStorageSelectField)]
-        ) : undefined}
+        ) : undefined */}
       </div>
     );
   }
@@ -376,5 +378,9 @@ export class ElsaActivityEditorModal {
 
   getHiddenClass(tab: string) {
     return this.renderProps.selectedTabName == tab ? '' : 'hidden';
+  }
+
+  isActivityHumanTask(type: string) {
+    return type == 'HumanTask' || type == 'HumanTaskEmail';
   }
 }

@@ -1,10 +1,10 @@
 {
-  "name": "@elsa-workflows/elsa-workflows-studio",
-  "version": "2.15.0",
+  "name": "@UlixeGroup/elsa-workflows-studio",
+  "version": "2.14.1-1",
   "description": "Elsa Workflow Studio is a collection of web components to manage Elsa workflows stored on an Elsa Workflows server.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elsa-workflows/elsa-core.git",
+    "url": "https://github.com/UlixeGroup/elsa-core.git",
     "directory": "src/designer/elsa-workflows-studio"
   },
   "main": "dist/index.cjs.js",
