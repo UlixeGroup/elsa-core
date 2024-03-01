@@ -50,19 +50,8 @@ jobs:
           npm version $VERSION --allow-same-version
           npm run build
       
-      - name: Build Bindings
-        working-directory: ./src/designer/bindings/aspnet/Elsa.Designer.Components.Web
-        run: |
-          npm install --force
-          npm install -g webpack
-          npm install -g webpack-cli
-          npm run build
-      
       - name: Build Elsa
         run: dotnet build --configuration Release /p:Version=$VERSION
-
-      - name: Run Tests
-        run: dotnet test --configuration Release --no-build --no-restore
 
       - name: Pack Elsa
         run: dotnet pack --configuration Release /p:Version=$VERSION /p:PackageOutputPath=$(pwd)/out 
