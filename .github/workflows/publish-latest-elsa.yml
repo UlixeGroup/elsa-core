@@ -29,9 +29,6 @@ jobs:
         run: echo "VERSION=${{ github.ref_name }}" >> $GITHUB_ENV
         if: ${{ github.event_name == 'release' }}
 
-      - name: Set release VERSION variable
-        run: echo "VERSION=${{ github.ref_name }}" >> $GITHUB_ENV
-
       - name: Checkout
         uses: actions/checkout@v1
       
