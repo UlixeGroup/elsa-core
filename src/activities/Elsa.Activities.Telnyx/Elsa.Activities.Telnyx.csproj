@@ -10,6 +10,7 @@
             This package provides activities to integrate with Telnyx.
         </Description>
         <PackageTags>elsa, workflows, telnyx, telephony, messaging, sms</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

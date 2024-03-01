@@ -9,6 +9,7 @@
             Elsa Retention is an optional part of Elsa Workflows that adds retention settings to the system.
         </Description>
         <PackageTags>elsa, workflow settings</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

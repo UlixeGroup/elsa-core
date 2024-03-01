@@ -10,6 +10,7 @@
           This package provides an SQL expression evaluator.
       </Description>
       <PackageTags>elsa, workflows, SQL</PackageTags>
+      <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

@@ -10,6 +10,7 @@
             This package provides a YesSql persistence provider.
         </Description>
         <PackageTags>elsa, workflow settings, orchard</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

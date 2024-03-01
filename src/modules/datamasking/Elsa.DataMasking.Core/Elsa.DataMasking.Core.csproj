@@ -9,6 +9,7 @@
             Elsa Data Masking is an optional part of Elsa Workflows that adds masking of recorded data to the system.
         </Description>
         <PackageTags>elsa, masking, redaction, gdpr, pii</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

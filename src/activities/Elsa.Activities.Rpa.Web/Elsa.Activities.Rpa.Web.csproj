@@ -15,7 +15,8 @@
             * GetText
             * CloseBrowser
         </Description>   
-        <PackageTags>elsa, workflows, rpa, web, selenium</PackageTags>       
+        <PackageTags>elsa, workflows, rpa, web, selenium</PackageTags>   
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>       
     </PropertyGroup>
     
     <ItemGroup>

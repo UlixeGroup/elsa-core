@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the PostgreSql database provider.
         </Description>
         <PackageTags>elsa, workflows, efcore, postgresql, npgsql</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

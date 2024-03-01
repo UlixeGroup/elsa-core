@@ -10,6 +10,7 @@
             This package provides activities to implement conductor-style workflows where Elsa sends commands to your application, which responds asynchronously with events.
         </Description>
         <PackageTags>elsa, workflows, conductor</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

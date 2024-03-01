@@ -11,6 +11,7 @@
 
         </Description>
         <PackageTags>elsa, workflows, timers, background tasks</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

@@ -10,6 +10,7 @@
             This package provides Hangfire jobs that handle workflow dispatch.
         </Description>
         <PackageTags>elsa, workflows, hangfire</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

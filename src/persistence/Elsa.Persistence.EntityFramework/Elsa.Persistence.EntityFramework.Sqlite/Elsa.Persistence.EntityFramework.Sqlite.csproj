@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the Sqlite database provider.
         </Description>
         <PackageTags>elsa, workflows, efcore</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

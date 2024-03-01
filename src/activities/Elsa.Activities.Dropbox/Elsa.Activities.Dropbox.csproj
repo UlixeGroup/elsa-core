@@ -12,6 +12,7 @@
             * SaveToDropbox
         </Description>
         <PackageTags>elsa, workflows, dropbox</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

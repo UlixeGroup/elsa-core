@@ -11,7 +11,8 @@
 
             * SendEmail
         </Description>   
-        <PackageTags>elsa, workflows, email, smtp</PackageTags>       
+        <PackageTags>elsa, workflows, email, smtp</PackageTags>   
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>       
     </PropertyGroup>
 
     <ItemGroup>

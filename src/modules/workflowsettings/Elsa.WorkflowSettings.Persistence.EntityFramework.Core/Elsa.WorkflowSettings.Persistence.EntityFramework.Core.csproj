@@ -10,6 +10,7 @@
             This package provides Entity Framework Core entities used by the Workflow Settings persistence EF Core providers.
         </Description>
         <PackageTags>elsa, workflow settings, efcore</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

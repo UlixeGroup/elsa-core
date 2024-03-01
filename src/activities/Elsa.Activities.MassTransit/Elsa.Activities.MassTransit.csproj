@@ -12,7 +12,8 @@
             * ReceiveMassTransitMessage
             * SendMassTransitMessage
         </Description>      
-        <PackageTags>elsa, workflows</PackageTags>
+        <PackageTags>elsa, workflows</PackageTags>      
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

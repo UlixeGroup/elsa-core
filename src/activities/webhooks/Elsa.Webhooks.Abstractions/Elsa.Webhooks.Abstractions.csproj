@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\..\..\common.props"/>
-    <Import Project="..\..\..\..\configureawait.props"/>
+    <Import Project="..\..\..\..\common.props" />
+    <Import Project="..\..\..\..\configureawait.props" />
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
@@ -11,10 +11,11 @@
         </Description>
         <PackageTags>elsa, workflows, webhooks</PackageTags>
         <RootNamespace>Elsa.Webhooks</RootNamespace>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\..\core\Elsa.Abstractions\Elsa.Abstractions.csproj"/>
+        <ProjectReference Include="..\..\..\core\Elsa.Abstractions\Elsa.Abstractions.csproj" />
     </ItemGroup>
 
 </Project>

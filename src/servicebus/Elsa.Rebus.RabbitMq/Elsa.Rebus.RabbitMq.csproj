@@ -9,7 +9,8 @@
             Elsa is a set of workflow libraries and tools that enable lean and mean workflowing capabilities in any .NET Core application.
             This package provides a RabbitMQ provider for the Rebus service bus API used by Elsa.
         </Description>       
-        <PackageTags>elsa, workflows, rebus, service bus, rabbitmq</PackageTags>
+        <PackageTags>elsa, workflows, rebus, service bus, rabbitmq</PackageTags>       
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

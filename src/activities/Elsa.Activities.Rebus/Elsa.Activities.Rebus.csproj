@@ -10,6 +10,7 @@
             This package provides activities to send, publish and receive messages using the Rebus library.
         </Description>
         <PackageTags>elsa, workflows, rebus, service bus</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

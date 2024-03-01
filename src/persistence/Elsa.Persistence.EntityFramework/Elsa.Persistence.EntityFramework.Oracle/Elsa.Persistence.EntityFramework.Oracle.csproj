@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the Oracle database provider.
         </Description>
         <PackageTags>elsa, workflows, efcore, oracle</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

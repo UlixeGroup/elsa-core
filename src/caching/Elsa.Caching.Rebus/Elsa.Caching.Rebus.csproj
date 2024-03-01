@@ -10,6 +10,7 @@
             This package provides a distributed cache signal decorator using Rebus to trigger signals.
         </Description>
         <PackageTags>elsa, workflows, rebus, cache</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

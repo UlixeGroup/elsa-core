@@ -10,6 +10,7 @@
             This package provides Entity Framework Core entities used by the various Elsa persistence EF Core providers.
         </Description>
         <PackageTags>elsa, workflows, efcore</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1'">

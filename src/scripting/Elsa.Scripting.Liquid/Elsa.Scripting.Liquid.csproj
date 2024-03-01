@@ -10,6 +10,7 @@
             This package provides a Liquid expression evaluator based on Fluid.
         </Description>
         <PackageTags>elsa, workflows, liquid</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

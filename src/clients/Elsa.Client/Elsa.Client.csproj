@@ -10,6 +10,7 @@
             This package provides a client using Refit for Elsa's REST API endpoints.
         </Description>
         <PackageTags>elsa, workflows, rest, api, client</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

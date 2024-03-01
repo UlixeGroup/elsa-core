@@ -10,6 +10,7 @@
             This package provides the PostgreSQL EF Core provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, efcore, postgresql</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
     
     <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">

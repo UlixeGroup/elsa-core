@@ -10,6 +10,7 @@
             This package provides activities to send and receive messages using Kafka.</Description>        
         <PackageTags>elsa, workflows</PackageTags>
         <Nullable>enable</Nullable>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

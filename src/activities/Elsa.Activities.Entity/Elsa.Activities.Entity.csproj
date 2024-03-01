@@ -12,6 +12,7 @@
             * EntityChanged
         </Description>
         <PackageTags>elsa, workflows, entity</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

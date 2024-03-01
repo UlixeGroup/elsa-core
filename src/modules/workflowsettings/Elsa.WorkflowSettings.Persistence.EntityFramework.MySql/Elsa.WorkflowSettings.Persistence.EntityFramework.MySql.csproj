@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the MySql database provider.
         </Description>
         <PackageTags>elsa, workflow settings, efcore, mysql, mariadb</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

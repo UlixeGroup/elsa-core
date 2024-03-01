@@ -16,6 +16,7 @@
             * TempFile
         </Description>
         <PackageTags>elsa, workflows</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

@@ -10,6 +10,7 @@
             This package provides the MongoDB provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, mongodb</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

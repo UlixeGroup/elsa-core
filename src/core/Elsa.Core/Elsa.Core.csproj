@@ -12,6 +12,7 @@
             Tip: reference the `Elsa` package instead of this one.
         </Description>
         <PackageTags>elsa, workflows, orchard</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

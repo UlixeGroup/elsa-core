@@ -10,6 +10,7 @@
             This package provides the YesSQL provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, yessql</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

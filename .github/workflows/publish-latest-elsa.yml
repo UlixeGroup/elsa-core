@@ -1,14 +1,4 @@
 name: Build and Publish Elsa Packages
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - 2.x
-  pull_request:
-    branches:
-      - 2.x
-  release:
-    types: [published]
 
 env:
   NODE_OPTIONS: --max-old-space-size=4096
@@ -21,13 +11,8 @@ jobs:
 
     steps:
 
-      - name: Set preview VERSION variable
-        run: echo "VERSION=$ELSA_VERSION-preview.${{ github.run_number }}" >> $GITHUB_ENV
-        if: ${{ github.event_name != 'release' }}
-
-      - name: Set release VERSION variable
-        run: echo "VERSION=${{ github.ref_name }}" >> $GITHUB_ENV
-        if: ${{ github.event_name == 'release' }}
+      - name: Set VERSION variable
+        run: echo "VERSION=$ELSA_VERSION" >> $GITHUB_ENV
 
       - name: Checkout
         uses: actions/checkout@v1

@@ -11,6 +11,7 @@
             This package provides activities to read and write files to blob storage using FluentStorage that provides a generic interface for popular cloud storage providers like Amazon S3, Azure Service Bus, Azure Event Hub, Azure Storage, Azure Data Lake Store thus abstracting Blob and Messaging services.
         </Description>
         <PackageTags>elsa, workflows, blob storage</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

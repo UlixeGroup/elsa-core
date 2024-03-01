@@ -10,6 +10,7 @@
             This package provides Entity Framework Core migrations for the SQL Server database provider.
         </Description>
         <PackageTags>elsa, workflows, efcore</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">

@@ -1,3 +1,3 @@
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Elsa.Core")]
+[assembly: InternalsVisibleTo("UlixeGroup.Elsa.Core")]

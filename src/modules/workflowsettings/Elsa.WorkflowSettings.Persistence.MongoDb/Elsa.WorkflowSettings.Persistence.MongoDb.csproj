@@ -11,6 +11,7 @@
         </Description>
         <Copyright>2020</Copyright>
         <PackageTags>elsa, workflow settings, mongodb</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

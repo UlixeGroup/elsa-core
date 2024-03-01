@@ -10,6 +10,7 @@
           This package provides activities to run SQL queries on given database using an connection string.
       </Description>
       <PackageTags>elsa, workflows</PackageTags>
+      <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
     
   <ItemGroup>

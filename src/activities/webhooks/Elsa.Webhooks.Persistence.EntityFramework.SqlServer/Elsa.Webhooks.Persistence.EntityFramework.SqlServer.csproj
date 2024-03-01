@@ -10,6 +10,7 @@
             This package provides the SqlServer EF Core provider for Webhook persistence.
         </Description>
         <PackageTags>elsa, workflows, webhooks, efcore, sqlserver</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">

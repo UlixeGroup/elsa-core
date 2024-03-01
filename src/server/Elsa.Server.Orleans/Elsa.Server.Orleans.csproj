@@ -10,6 +10,7 @@
             This package provides Orleans grains that handle workflow dispatch.
         </Description>
         <PackageTags>elsa, workflows, orleans, actor model</PackageTags>
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

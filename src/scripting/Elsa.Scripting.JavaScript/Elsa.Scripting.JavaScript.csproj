@@ -10,7 +10,8 @@
             Elsa is a set of workflow libraries and tools that enable lean and mean workflowing capabilities in any .NET Core application.
             This package provides a JavaScript expression evaluator based on Jint.
         </Description>      
-        <PackageTags>elsa, workflows, javascript, jint</PackageTags>
+        <PackageTags>elsa, workflows, javascript, jint</PackageTags>      
+        <AssemblyName>UlixeGroup.$(MSBuildProjectName)</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
