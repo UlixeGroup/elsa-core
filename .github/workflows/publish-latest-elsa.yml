@@ -12,7 +12,7 @@ on:
 
 env:
   NODE_OPTIONS: --max-old-space-size=4096
-  ELSA_VERSION: 2.15.0
+  ELSA_VERSION: 2.14.1-1
 
 jobs:
   build_and_pack:
@@ -37,6 +37,13 @@ jobs:
       - run: echo $VERSION
       - run: node --version
       - run: npm --version
+
+      - name: Build Designer
+        working-directory: ./src/designer/elsa-workflows-studio
+        run: |
+          npm install --force
+          npm version $VERSION --allow-same-version
+          npm run build
       
       - name: Build Bindings
         working-directory: ./src/designer/bindings/aspnet/Elsa.Designer.Components.Web
