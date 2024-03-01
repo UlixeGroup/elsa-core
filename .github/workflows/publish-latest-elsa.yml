@@ -32,24 +32,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.12.1
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
-      
-      - run: echo $VERSION
-      - run: node --version
-      - run: npm --version
-
-      - name: Build Designer
-        working-directory: ./src/designer/elsa-workflows-studio
-        run: |
-          npm install --force
-          npm version $VERSION --allow-same-version
-          npm run build
-      
       - name: Build Elsa
         run: dotnet build --configuration Release /p:Version=$VERSION
 
