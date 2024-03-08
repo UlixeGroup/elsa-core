@@ -15,5 +15,6 @@ namespace Elsa.Client.Models
         [DataMember(Order = 7)] public ActivityInputDescriptor[] Properties { get; set; } = Array.Empty<ActivityInputDescriptor>();
         [DataMember(Order = 7)] public ActivityInputDescriptor[] InputProperties { get; set; } = Array.Empty<ActivityInputDescriptor>();
         [DataMember(Order = 7)] public ActivityOutputDescriptor[] OutputProperties { get; set; } = Array.Empty<ActivityOutputDescriptor>();
+        [DataMember(Order = 8)] public object CustomOptions { get; set; } = default!;
     }
 }

@@ -14,6 +14,7 @@ namespace Elsa.Metadata
             InputProperties = Array.Empty<ActivityInputDescriptor>();
             OutputProperties = Array.Empty<ActivityOutputDescriptor>();
             Outcomes = Array.Empty<string>();
+            CustomOptions = new object();
         }
 
         public string Type { get; set; }
@@ -22,7 +23,8 @@ namespace Elsa.Metadata
         public string Category { get; set; }
         public ActivityTraits Traits { get; set; }
         public string[] Outcomes { get; set; }
-        
+        public object CustomOptions { get; set; }
+
         [Obsolete("Use InputProperties instead.")]
         public ActivityInputDescriptor[] Properties 
         { 

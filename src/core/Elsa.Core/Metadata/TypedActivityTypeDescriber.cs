@@ -34,10 +34,10 @@ namespace Elsa.Metadata
             var category = activityAttribute?.Category ?? "Miscellaneous";
             var traits = activityAttribute?.Traits ?? ActivityTraits.Action;
             var outcomes = await GetOutcomesAsync(activityAttribute, cancellationToken);
-            var customOptions = activityAttribute?.CustomOptions ?? new object();
             var properties = activityType.GetProperties();
             var inputProperties = DescribeInputProperties(properties).OrderBy(x => x.Order);
             var outputProperties = DescribeOutputProperties(properties);
+            var customOptions = activityAttribute?.CustomOptions ?? new object();
 
             return new ActivityDescriptor
             {
@@ -48,7 +48,8 @@ namespace Elsa.Metadata
                 Traits = traits,
                 InputProperties = inputProperties.ToArray(),
                 OutputProperties = outputProperties.ToArray(),
-                Outcomes = outcomes
+                Outcomes = outcomes,
+                CustomOptions = customOptions,
             };
         }
 

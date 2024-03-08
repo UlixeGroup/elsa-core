@@ -104,6 +104,8 @@ export class ElsaActivityEditorModal {
       propertyStorageProviders: {}
     };
 
+    console.log(activityDescriptor, activityModel);
+
     const t = this.t;
     let tabs: Array<TabModel> = [];
 
@@ -308,6 +310,8 @@ export class ElsaActivityEditorModal {
     //   const fieldName = `propertyStorageProviders.${propertyName}`;
     //   return selectField(formContext, fieldName, propertyName, activityModel.propertyStorageProviders[propertyName], storageDescriptorOptions, null, fieldName);
     // }
+
+    console.log(activityModel, activityDescriptor);
 
     return (
       <div class="elsa-space-y-8 elsa-w-full">
