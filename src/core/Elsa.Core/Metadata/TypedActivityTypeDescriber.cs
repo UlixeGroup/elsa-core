@@ -49,7 +49,7 @@ namespace Elsa.Metadata
                 InputProperties = inputProperties.ToArray(),
                 OutputProperties = outputProperties.ToArray(),
                 Outcomes = outcomes,
-                CustomOptions = customOptions,
+                CustomOptions = (string[])customOptions,
             };
         }
 
