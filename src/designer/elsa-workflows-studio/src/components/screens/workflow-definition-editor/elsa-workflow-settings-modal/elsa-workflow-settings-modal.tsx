@@ -70,7 +70,7 @@ export class ElsaWorkflowDefinitionSettingsModal {
 
   render() {
 
-    const tabs = ['Settings', 'Variables', 'Workflow Context', 'Advanced'];
+    const tabs = ['Settings', 'Variables', 'Advanced'];
     const selectedTab = this.selectedTab;
     const inactiveClass = 'elsa-border-transparent elsa-text-gray-500 hover:elsa-text-gray-700 hover:elsa-border-gray-300';
     const selectedClass = 'elsa-border-blue-500 elsa-text-blue-600';
@@ -122,8 +122,6 @@ export class ElsaWorkflowDefinitionSettingsModal {
     const selectedTab = this.selectedTab;
 
     switch (selectedTab) {
-      case 'Workflow Context':
-        return this.renderWorkflowContextTab();
       case 'Variables':
         return this.renderVariablesTab();
       case 'Advanced':
